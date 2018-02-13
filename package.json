@@ -1,0 +1,27 @@
+{
+  "name": "clockin-api",
+  "version": "1.0.0",
+  "description": "api endpoint for clockin web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p ./lib/db/.storage",
+    "start": "npm run build && pm2 start index.js --watch"
+  },
+  "author": "unibtc@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "dateformat": "^3.0.2",
+    "dotenv": "^5.0.0",
+    "kcors": "^2.2.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-bouncer": "^6.0.4",
+    "koa-helmet": "^3.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "mailgun-js": "^0.14.2",
+    "node-lmdb": "^0.4.13"
+  }
+}
