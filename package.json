@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "mkdir -p ./lib/db/.storage",
-    "start": "npm run build && pm2 start index.js --watch"
+    "start": "npm run build && pm2 start index.js --watch",
+    "reset": "pm2 delete all && rm -rf ./lib/db/.storage && npm run start"
   },
   "author": "unibtc@gmail.com",
   "license": "MIT",
