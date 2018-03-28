@@ -12,6 +12,7 @@
   "author": "unibtc@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "debug": "^3.1.0",
     "dotenv": "^5.0.0",
     "kcors": "^2.2.1",
     "koa": "^2.4.1",
